@@ -1,0 +1,77 @@
+body {
+    background: url("https://www.unelmaitsesta.fi/wp-content/uploads/2020/01/AdobeStock_209473934-scaled.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+p {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 12pt;
+}
+
+#left_side {
+    flex: 1 1 600px;
+    padding: 1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#right_side {
+    border-left: black solid 1px;
+    flex: 1 1 600px;
+    padding: 1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+h1,
+h2 {
+    border-bottom: black solid 1px;
+    margin-bottom: .5%;
+    text-align: center;
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    font-size: 24px;
+    border-bottom: black solid 1px;
+}
+
+p {
+    margin-top: 0.1px;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+h3 {
+    border-color: black;
+    border-bottom: black solid 1px;
+    text-align: center;
+}

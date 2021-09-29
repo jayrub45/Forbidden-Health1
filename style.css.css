@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+.header {
+    background-color: white;
+    padding: 40px;
+    text-align: left;
+    background: center/cover url("https://www.nicepng.com/png/full/108-1087831_health-bar-png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav_menu {
+    overflow: hidden;
+}
+
+.nav_menu {
+    padding: 5px;
+    animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+    5% {
+        background-color: darkblue;
+    }
+    50% {
+        background-color: #0011ff;
+    }
+    100% {
+        background-color: rgb(0, 250, 217);
+    }
+}
+
+.nav_menu a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_menu a:hover {
+    background-color: mediumblue;
+    color: white;
+}
+
+.columnA,
+.columnB,
+.columnC {
+    float: left;
+    width: 30%;
+    padding: 15px;
+    text-align: justify;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    letter-spacing: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+        width: 200%;
+    }
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+h1 {
+    text-shadow: 0 0 3em #2356ff;
+    animation: glow 2.5s ease infinite;
+    text-align: center;
+}
+
+@keyframes glow {
+    0%,
+    100% {
+        text-shadow: 0 0 1em #1041ff, 0 0 3em #1041ff, 0 0 10em #1041ff, 0 0 10em #1041ff, 0 0 0.04em #1041ff;
+        color: #28d7fe;
+    }
+    50% {
+        text-shadow: 0 0 0.5em #082180, 0 0 1.5em #082180, 0 0 5em #082180, 0 0 5em #082180, 0 0 0.02em #082180;
+        color: #028180;
+    }
+}
